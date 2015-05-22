@@ -249,7 +249,7 @@ var tw = {
 		setupSectionSwitch();
 		tw.gauge.init();
 		tw.comparison.init();
-		tw.map.init();
+		//tw.map.init();
 
 		if (window.location.href.indexOf('embed') < 0) {
 			$('h1').show();
