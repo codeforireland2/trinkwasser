@@ -15,11 +15,11 @@
 <!-- endbuild -->
 
 <!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
+	<style type="text/css">
+		.gradient {
+			 filter: none;
+		}
+	</style>
 <![endif]-->
 </head>
 <body class="bg-gradient state-1">
@@ -30,56 +30,11 @@
 		<h1 style="display:none">Was steckt in meinem Leitungswasser?</h1>
 
 		<div class="choose-location">
-			<div class="well choose-location-well">
-				<form class="form-horizontal form-choose-location" role="form">
-					<div class="form-group select-city">
-						<label for="city" class="col-sm-2 control-label">Ort</label>
-						<div class="col-sm-10">
-							<select id="city" class="city form-control">
-								<option value="">Bitte auswählen</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group select-district" style="display:none;">
-						<label for="district" class="col-sm-2 control-label">Ortsteil</label>
-						<div class="col-sm-10">
-							<select id="district" class="district form-control">
-							</select>
-						</div>
-					</div>
-					<div class="form-group select-street" style="display:none;">
-						<label for="streetZone" class="col-sm-2 control-label">Straße</label>
-						<div class="col-sm-10">
-							<select id="streetZone" class="streetZone form-control">
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
-							<button type="submit" class="btn btn-warning">
-								<span class="glyphicon glyphicon-chevron-right"></span> Weiter
-							</button>
-						</div>
-					</div>
-				</form>
-				<br />
-			</div>
-
+			<ul class="nav nav-tabs responsive" id="city-tabs">
+			</ul>
 		</div>
 
-		<div class="results" style="display:none;">
-			<form class="form-inline form-choose-location-quick">
-				<div class="form-group">
-					<select class="city form-control"></select>
-				</div>
-				<div class="form-group select-district">
-					<select class="district form-control"></select>
-				</div>
-				<div class="form-group select-street">
-					<select class="streetZone form-control"></select>
-				</div>
-			</form>
-
+		<div class="results" style="display: none;">
 
 			<ul class="nav nav-tabs responsive">
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
@@ -141,7 +96,7 @@
 										<p>Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe Kontentrationen an Mineralstoffen wie Magnesium, Calcium,
 											Flourid, Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet.</p>
 										<p>Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung zur Bildung von Harnsäuresteinen sollten jedoch wenig
-											Sulfat zu sich nehmen (Gehalt < 240 mg/l).</p>
+											Sulfat zu sich nehmen (Gehalt &lt; 240 mg/l).</p>
 										<p>Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen
 											äußern sich in einem süßen bis bitterem Geschmack.</p>
 									</div>
@@ -161,8 +116,8 @@
 										<g class="gauge-values">
 											<defs>
 												<clipPath id="cut-off-top">
-												 	<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
-										 		</clipPath>
+													<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
+												</clipPath>
 
 												<pattern id="range-indicator" x="8" y="8" width="8" height="8" patternUnits="userSpaceOnUse">
 													<line class="range-indicator" x1="0" x2="8" y1="8" y2="0" />
@@ -321,8 +276,8 @@
 												<g class="gauge-values">
 													<defs>
 														<clipPath id="bottle-cut-off-top">
-														 	<rect class="gauge-value-bubble-cut" x="0" y="822" width="258" height="0" />
-												 		</clipPath>
+															<rect class="gauge-value-bubble-cut" x="0" y="822" width="258" height="0" />
+														</clipPath>
 													</defs>
 
 													<rect class="gauge-value" x="20" y="822" width="216" height="0" />
@@ -692,4 +647,4 @@
 		});
 	</script>
 </body>
-</htmle
+</html>

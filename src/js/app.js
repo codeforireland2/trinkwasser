@@ -41,14 +41,14 @@ var tw = {
 		});
 	};
 
-	var updateZone = function() {
-		var city = $('#city').val();
+	var updateZone = function(city) {
+		//var city = $('#city').val();
 		var district = $('#district').val();
 		var streetZone = $('#streetZone').val();
 		var zone = streetZone ? streetZone.substr(0, streetZone.indexOf('|')) : '';
 
 		$('.results').toggle(hasSelectedFirstLocation);
-		$('.choose-location').toggle(!hasSelectedFirstLocation);
+		//$('.choose-location').toggle(!hasSelectedFirstLocation);
 		$('body').toggleClass('state-1', !hasSelectedFirstLocation);
 
 		if (hasSelectedFirstLocation) {
@@ -89,6 +89,30 @@ var tw = {
 				$('.result-without-value').show();
 			}
 		}
+	};
+
+	var generateCityTabsHtml = function (values) {
+		return values.map(function (value) {
+			return '<li class="nav-li-main"><a data-toggle="city-tab" data-attribute="' + value + '">' + value + '</a></li>';
+		});
+	};
+
+	var setupCityTabs = function () {
+		$('#city-tabs').html(generateCityTabsHtml(Object.keys(tw.data.locations)));
+		$('a[data-toggle="city-tab"]').on('click', function(e) {
+			$('a[data-toggle="city-tab"]').removeClass('active').closest('.nav-li-main').removeClass('active');
+			attribute = $(e.target).data('attribute');
+			hasSelectedFirstLocation = true;
+			updateZone(attribute);
+			updateSection();
+			attribute = $('li.active > a[data-toggle="tab"]').data('attribute');
+			if (!attribute) {
+				attribute = 'natrium';
+			}
+			updateAttributeContent();
+
+			$(e.target).parent().addClass('active').closest('.nav-li-main').addClass('active');
+		});
 	};
 
 	var setupTabs = function(startAttribute) {
@@ -243,7 +267,9 @@ var tw = {
 
 	tw.init = function() {
 		completeReferenceWaters();
-		setupForm();
+		setupCityTabs();
+		//setupForm();
+
 		setupQuickForm();
 		setupTabs('natrium');
 		setupSectionSwitch();
