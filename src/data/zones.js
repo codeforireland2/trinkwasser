@@ -23,7 +23,7 @@ tw.data.zones = {
     "acid_capacity":"3.98",
     "base_capacity":"0.31",
     "year":2014,
-    "description":""
+    "description": "Mit Beginn der zentralen Wasserversorgung 1880 in Münster wurde die erste Pumpstation errichtet. Aus dieser Zeit stammt unser ältestes Wasserwerk, das 1888 in Betrieb genommen wurde. Selbstverständlich laufen heute nicht mehr die alten Anlagen. Das Wasserwerk wurde laufend modernisiert. Inzwischen verfügt das Wasserwerk Geist über das größte Speichervolumen in Münster von insgesamt 12.000 m³. Die maximale Aufbereitung pro Stunde beträgt 1.000 m³."
   },
   "Wasserwerk Hohe Ward": {
     "temp":"12.6",
@@ -49,7 +49,7 @@ tw.data.zones = {
     "acid_capacity":"3.33",
     "base_capacity":"0.32",
     "year":2014,
-    "description":""
+    "description": "Das Wasserwerk Hohe Ward ist vielen Münsteranern ein Begriff, da es sich in einem Naherholungsgebiet im Süden von Münster befindet. 1906 wurde das Wasserwerk in Betrieb genommen und ist als historisches Bauwerk bis heute erhalten geblieben. Auf Wunsch werden hier nach Voranmeldung Gruppenführungen durchgeführt, um einen Einblick hinter denkmalgeschützter Kulisse zu geben, in dem ein Teil des Münsterwassers mittels modernster Technologie aufbereitet wird. Die maximale Aufbereitung pro Stunde beträgt 1.000 m³ und die Speicherkapazität von Trinkwasser in der Hohen Ward umfasst 5.000 m³.-"
   },
   "Wasserwerk Kinderhaus": {
     "temp":"11.3",
@@ -75,7 +75,7 @@ tw.data.zones = {
     "acid_capacity":"4.65",
     "base_capacity":"0.49",
     "year":2014,
-    "description":""
+    "description":"In Kinderhaus ist unser kleinstes Wasserwerk mit einer Aufbereitungskapazität von 150 m³ pro Stunde. 1957 erfolgte die Inbetriebnahme und damit die Erschließung der Wasservorkommen in Kinderhaus. Hier betreiben wir unser einziges Wasserwerk, in dem wir keine Grundwasseranreicherung vornehmen. Das Wasserwerk Kinderhaus verfügt über ein Speichervolumen von 600 m³."
   },
   "Wasserwerk Hornheide-Haskenau": {
     "temp":"11.9",
@@ -101,15 +101,41 @@ tw.data.zones = {
     "acid_capacity":"4.45",
     "base_capacity":"0.45",
     "year":2014,
-    "description":""
+    "description":"Seit 1973 ergänzt dieses Wasserwerk mit der Grundwassererfassung in Hornheide, in der Haskenau und in Gittrup die Trinkwasserversorgung in Münster. Bis zu 1.200 m³ Grundwasser pro Stunde kann hier gefördert und 10.000 m³ Trinkwasser gespeichert werden."
+  },
+  "Zukauf Gelsenwasser AG": {
+    "temp":"12.3",
+    "ph":"7.53",
+    "conductivity":"512",
+    "calcium":"71.6",
+    "magnesium":"4.6",
+    "eisen":"< 0.01",
+    "mangan":"< 0.005",
+    "fluorid":"0.16",
+    "aluminium":"< 0.02",
+    "chlorid":"29.7",
+    "nitrat":"19.0",
+    "nitrit":"< 0.01",
+    "sulfat":"48.2",
+    "natrium":"20.1",
+    "kalium":"5.2",
+    "total_organic_carbon":"2.65",
+    "hardness":"11.1",
+    "hardness_mol":"1.98",
+    "hardness_word":"mittel (2)*",
+    "carbonate_hardness":"8.4",
+    "acid_capacity":"2.98",
+    "base_capacity":"0.23",
+    "year":2014,
+    "description":"Etwa 75 Prozent der Trinkwasserlieferungen werden aus den ortsnahen Wasservorkommen gefördert. Die restlichen 25 Prozent des Wasserbedarfs werden von der Gelsenwasser AG aus dem Wasserwerk Haltern geliefert."
   }
 }; tw.data.averageValues = {
-	"natrium": 32.0,
-	"kalium": 5.5,
-	"calcium": 95.0,
-	"magnesium": 8.2,
-	"chlorid": 48.4,
-	"nitrat": 12.1,
-	"sulfat": 77.3,
-	"hardness": 15.1
+	"natrium": 29.6,
+	"kalium": 5.4,
+	"calcium": 90.3,
+	"magnesium": 7.4,
+	"chlorid": 44.7,
+	"nitrat": 13.5,
+	"sulfat": 71.5,
+	"hardness": 14.3
 };
