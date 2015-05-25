@@ -24,6 +24,13 @@ a {
 h1 {
 	margin-bottom: 24px;
 }
+.welcome-text {
+  font-size: 20px;
+  margin: 50px;
+}
+.gauge-description .attribute-description {
+  font-size: 14px;
+}
 .form-choose-location-quick {
 	margin: 10px 0 60px 0;
 }
