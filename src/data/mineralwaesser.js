@@ -1,23 +1,33 @@
 tw.data.referenceWaters = {
-	"wueteria": {
-		"natrium": 10.7,
-		"kalium": 2.6,
-		"calcium": 118,
-		"magnesium": 48,
-		"chlorid": 43,
-		"nitrat": 0.05,
-		"sulfat": 68,
-		"sources": ["http://www.wueteria.de/unser_wasser/index.php"]
+	"salvus": {
+		"natrium": 19.9,
+		"kalium": 1.1,
+		"calcium": 76,
+		"magnesium": 4,
+		"chlorid": 50,
+		"nitrat": 0,
+		"sulfat": 40,
+		"sources": ["http://www.salvus.de/produkte/salvus-mineralwasser-naturell/"]
 	},
-	"teusser": {
-		"natrium": 53,
-		"kalium": 8,
-		"calcium": 565,
-		"magnesium": 82,
-		"chlorid": 27,
-		"nitrat": 0.5,
-		"sulfat": 1450,
-		"sources": ["http://www.teusser.de/index.php?id=225"]
+	"apodis": {
+		"natrium": 19,
+		"kalium": 1.3,
+		"calcium": 110.2,
+		"magnesium": 5.9,
+		"chlorid": 42,
+		"nitrat": 0,
+		"sulfat": 73,
+		"sources": ["http://www.mineralwasser-genuss.de/apodis/"]
+	},
+	"sawell": {
+		"natrium": 22,
+		"kalium": 0.7,
+		"calcium": 76,
+		"magnesium": 3.8,
+		"chlorid": 52,
+		"nitrat": 0,
+		"sulfat": 52,
+		"sources": ["http://www.mineralwasser-genuss.de/sawell/"]
 	},
 	"volvic": {
 		"natrium": 11.6,
