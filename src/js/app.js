@@ -48,8 +48,6 @@ var tw = {
 		var zone = streetZone ? streetZone.substr(0, streetZone.indexOf('|')) : '';
 
 		$('.results').toggle(hasSelectedFirstLocation);
-		//$('.choose-location').toggle(!hasSelectedFirstLocation);
-		$('body').toggleClass('state-1', !hasSelectedFirstLocation);
 
 		if (hasSelectedFirstLocation) {
 			var newZoneId = generateZoneId(city, district, zone);
