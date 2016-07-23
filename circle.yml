@@ -6,3 +6,7 @@ deployment:
     branch: master
     commands:
       - npm run deploy
+dependencies:
+  pre:
+    - git config user.name "$USER_NAME"
+    - git config user.email "$USER_EMAIL"
