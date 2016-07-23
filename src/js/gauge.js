@@ -2,7 +2,7 @@
 	'use strict';
 
 	var nutrientLimits = {
-		"natrium": 200,
+		"na": 200,
 		"kalium": 12,
 		"calcium": 400,
 		"magnesium": 60,
@@ -150,19 +150,19 @@
 					'x': 0,
 					'width': 225,
 					'label': 'weich',
-					'rangeLabel': '&lt; 8,4 °dH',
+					'rangeLabel': '&lt; 8,4 °dH'
 				}, {
 					'id': 2,
 					'x': 225,
 					'width': 150,
 					'label': 'mittel',
-					'rangeLabel': '8,4 - 14 °dH',
+					'rangeLabel': '8,4 - 14 °dH'
 				}, {
 					'id': 3,
 					'x': 375,
 					'width': 375,
 					'label': 'hart',
-					'rangeLabel': '&gt; 14 °dH',
+					'rangeLabel': '&gt; 14 °dH'
 				}]
 			}
 		};
