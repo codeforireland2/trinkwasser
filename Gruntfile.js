@@ -98,6 +98,14 @@ module.exports = function(grunt) {
 				port: 8091
 			}
 		},
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          base: 'src'
+        }
+      }
+    },
 		'gh-pages': {
 			options: {
 				base: 'dist'
@@ -114,6 +122,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jsonmin');
 	grunt.loadNpmTasks('grunt-rev');
 	grunt.loadNpmTasks('grunt-usemin');
@@ -123,5 +133,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('dataupdate', ['jsonmin:dist']);
 	grunt.registerTask('build', ['clean:dist', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist', 'rev', 'usemin']);
 	grunt.registerTask('deploy', ['build', 'gh-pages']);
+	grunt.registerTask('serve', ['connect', 'watch']);
 	grunt.registerTask('default', ['build']);
 };
