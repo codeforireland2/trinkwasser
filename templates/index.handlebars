@@ -25,7 +25,7 @@
 <body class="bg-gradient">
 	<div class="container">
 		<div class="pull-right hidden-xs">
-      <h1 style="display:none"><small>San Diego</small></h1>
+      <h1 style="display:none"><small>{{app.city}}</small></h1>
 		</div>
 		<h1 style="display:none">Was steckt in meinem Leitungswasser?</h1>
 
@@ -33,16 +33,18 @@
 
 		<div class="choose-location">
 			<ul class="nav nav-tabs responsive" id="city-tabs">
-        <li class="nav-li-main"><a data-toggle="city-tab" data-attribute="Alvarado">Alvarado</a></li>
-        <li class="nav-li-main"><a data-toggle="city-tab" data-attribute="Lower Otay">Lower Otay</a></li>
-        <li class="nav-li-main"><a data-toggle="city-tab" data-attribute="Miramar">Miramar</a></li>
+        {{#each locations}}
+        <li class="nav-li-main"><a data-toggle="city-tab" data-attribute="{{name}}">{{name}}</a></li>
+        {{/each}}
 			</ul>
 		</div>
 
 		<div class="results" style="display: none;">
 
 			<ul class="nav nav-tabs responsive">
-          <li class="nav-li-main"><a data-toggle="tab" data-attribute="na">Sodium</a></li>
+        {{#each measures}}
+          <li class="nav-li-main"><a data-toggle="tab" data-attribute="{{id}}">{{name}}</a></li>
+        {{/each}}
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> Fragen und Antworten</a></li>
 			</ul>
 

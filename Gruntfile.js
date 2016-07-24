@@ -2,6 +2,16 @@ module.exports = function(grunt) {
 	'use strict';
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
+		'compile-handlebars': {
+			allStatic: {
+				files: [{
+          src: 'templates/index.handlebars',
+          dest: 'src/index.html'
+				}],
+				templateData: 'src/data/configuration.json'
+			}
+		},
 		uglify: {
 			options: {
 				banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
@@ -34,7 +44,11 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			files: ['<%= jshint.files %>'],
-			tasks: ['jshint']
+			tasks: ['jshint'],
+      template: {
+        files: 'templates/**/*.handlebars',
+        tasks: ['template']
+      }
 		},
 		useminPrepare: {
 			html: ['src/*.html'],
@@ -61,6 +75,7 @@ module.exports = function(grunt) {
 			}
 		},
 		clean: {
+      html: ['src/*.html'],
 			dist: {
 				files: [{
 					dot: true,
@@ -129,10 +144,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-usemin');
 	grunt.loadNpmTasks('grunt-devserver');
 	grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-compile-handlebars');
 
 	grunt.registerTask('dataupdate', ['jsonmin:dist']);
 	grunt.registerTask('build', ['clean:dist', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist', 'rev', 'usemin']);
 	grunt.registerTask('deploy', ['build', 'gh-pages']);
-	grunt.registerTask('serve', ['connect', 'watch']);
+  grunt.registerTask('template', ['clean:html', 'compile-handlebars']);
+  grunt.registerTask('serve', ['template', 'connect', 'watch']);
 	grunt.registerTask('default', ['build']);
 };

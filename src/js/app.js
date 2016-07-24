@@ -1,5 +1,6 @@
 var tw = {
-	data: {}
+	data: {},
+  configuration: {}
 };
 
 (function(tw, $) {
@@ -97,7 +98,7 @@ var tw = {
 	};
 
 	var setupCityTabs = function () {
-		$('#city-tabs').html(generateCityTabsHtml(Object.keys(tw.data.locations)));
+		//$('#city-tabs').html(generateCityTabsHtml(Object.keys(tw.data.locations)));
 		$('a[data-toggle="city-tab"]').on('click', function(e) {
 			$('a[data-toggle="city-tab"]').removeClass('active').closest('.nav-li-main').removeClass('active');
 			attribute = $(e.target).data('attribute');
@@ -265,20 +266,24 @@ var tw = {
 	};
 
 	tw.init = function() {
-		completeReferenceWaters();
-		setupCityTabs();
-		//setupForm();
+    d3.json("data/configuration.json", function(data) {
+      data.limits = _.reduce(data.measures, function(result, d) { result[d.id] = d.limit; return result;}, {});
+      tw.configuration = data;
+      completeReferenceWaters();
+      setupCityTabs();
+      //setupForm();
 
-		setupQuickForm();
-		setupTabs('natrium');
-		setupSectionSwitch();
-		tw.gauge.init();
-		tw.comparison.init();
-		//tw.map.init();
+      setupQuickForm();
+      setupTabs(tw.configuration.app.activeMeasure);
+      setupSectionSwitch();
+      tw.gauge.init();
+      tw.comparison.init();
+      //tw.map.init();
 
-		if (window.location.href.indexOf('embed') < 0) {
-			$('h1').show();
-		}
+      if (window.location.href.indexOf('embed') < 0) {
+        $('h1').show();
+      }
+    });
 		// $('.city').val('Erlenbach').trigger('change');
 		// $('.switch-to-section[data-section="map"]').trigger('click');
 	};
