@@ -269,6 +269,7 @@ var tw = {
     d3.json("data/configuration.json", function(data) {
       data.limits = _.reduce(data.measures, function(result, d) { result[d.id] = d.limit; return result;}, {});
       tw.configuration = data;
+      tw.data.averageValues = _.reduce(data.measures, function(result, d) { result[d.id] = d.average; return result;}, {});
       completeReferenceWaters();
       setupCityTabs();
       //setupForm();
