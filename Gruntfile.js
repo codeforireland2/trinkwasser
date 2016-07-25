@@ -9,7 +9,9 @@ module.exports = function(grunt) {
           src: 'templates/index.handlebars',
           dest: 'src/index.html'
 				}],
-				templateData: 'src/data/configuration.json'
+				templateData: 'src/data/configuration.json',
+        helpers: 'handlebar/helpers/*.js',
+        globals: [ 'data/translations/en/for_use_drinking-water_messages_en.json']
 			}
 		},
 		uglify: {
@@ -126,6 +128,32 @@ module.exports = function(grunt) {
 				base: 'dist'
 			},
 			src: ['**']
+		},
+		abideExtract: {
+			html: {
+				src: 'templates/**/*.handlebars',
+				dest: 'locale/templates/LC_MESSAGES/messages.pot',
+				options: {
+					language: 'handlebars'
+				}
+			}
+		},
+		abideCreate: {
+			default: { // Target name.
+				options: {
+					template: 'locale/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
+					languages: ['en-US', 'de'],
+					localeDir: 'locale'
+				}
+			}
+		},
+		abideCompile: {
+			json: {
+				dest: 'data/translations/',
+				options: {
+					type: 'json'
+				}
+			}
 		}
 	});
 
@@ -145,6 +173,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-devserver');
 	grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-compile-handlebars');
+	grunt.loadNpmTasks('grunt-i18n-abide');
+	grunt.loadNpmTasks('grunt-static-i18n');
+  grunt.loadNpmTasks('grunt-angular-gettext');
 
 	grunt.registerTask('dataupdate', ['jsonmin:dist']);
 	grunt.registerTask('build', ['clean:dist', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist', 'rev', 'usemin']);
@@ -152,4 +183,5 @@ module.exports = function(grunt) {
   grunt.registerTask('template', ['clean:html', 'compile-handlebars']);
   grunt.registerTask('serve', ['template', 'connect', 'watch']);
 	grunt.registerTask('default', ['build']);
+grunt.registerTask('i18n', ['statici18n']);
 };

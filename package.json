@@ -22,6 +22,7 @@
     "grunt-contrib-watch": "^0.4.4",
     "grunt-devserver": "~0.4.1",
     "grunt-gh-pages": "~0.7.6",
+    "grunt-i18n-abide": "0.0.20",
     "grunt-jsonmin": "~0.2.4",
     "grunt-rev": "~0.1.0",
     "grunt-usemin": "~0.1.10",

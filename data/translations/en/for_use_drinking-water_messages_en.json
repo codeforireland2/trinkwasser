@@ -1,0 +1,92 @@
+{
+  "messages": {
+   "": {
+      "project-id-version": "PACKAGE VERSION",
+      "report-msgid-bugs-to": "",
+      "pot-creation-date": "2016-07-25 16:57+0000",
+      "po-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+      "last-translator": "Mila Frerichs <mila.frerichs@gmail.com>, 2016",
+      "language-team": "English (https://www.transifex.com/civic-vision-os/teams/65390/en/)",
+      "mime-version": "1.0",
+      "content-type": "text/plain; charset=utf-8",
+      "content-transfer-encoding": "8bit",
+      "language": "en",
+      "plural-forms": "nplurals=2; plural=(n != 1);"
+   },
+   "Was steckt in meinem Leitungswasser?": [
+      null,
+      "What's in my drinking water"
+   ],
+   "Diese Webseite erlaubt eine einfache Übersicht der Trinkwasserwerte für Münster. Es ist außerdem ein Vergleich mit Mineralwässern möglich. Die Daten und einige der Texte hierfür stammen von den Seiten der Stadtwerke Münster. Zum starten einfach eines der untenstehenden Wasserwerke auswählen.": [
+      null,
+      "This website adds an easy overview of drinking water quality in San Diego.\nYou can compare the drinking water with bottled water as well."
+   ],
+   "Fragen und Antworten": [
+      null,
+      "FAQ"
+   ],
+   "Es liegen leider keine Werte für diesen Inhaltsstoff vor.": [
+      null,
+      "No values available"
+   ],
+   "Vergleich mit Mineralwasser": [
+      null,
+      "Compare to bottled water"
+   ],
+   "Wert": [
+      null,
+      "Value"
+   ],
+   "Grenzwert": [
+      null,
+      "Threshold"
+   ],
+   "Durchschnitt": [
+      null,
+      "Average"
+   ],
+   "(Münster, rote Linie)": [
+      null,
+      "(San Diego, red line)"
+   ],
+   "Tagesbedarf": [
+      null,
+      "daily requirement"
+   ],
+   "Zurück": [
+      null,
+      "back"
+   ],
+   "Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.": [
+      null,
+      ""
+   ],
+   "Die Daten stammen aus dem Jahr": [
+      null,
+      "Data from year"
+   ],
+   "Woher kommt unser Trinkwasser?": [
+      null,
+      ""
+   ],
+   "Zwei Drittel des Wasserbedarfs der Stadt Münster werden in den vier münsterschen Wasserwerken Geist, Hohe Ward, Kinderhaus und Hornheide aufbereitet. Das restliche Drittel beziehen wir über die Gelsenwasser AG aus dem Haltener Wasserwerk.": [
+      null,
+      ""
+   ],
+   "Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser? ": [
+      null,
+      ""
+   ],
+   "Kontakt": [
+      null,
+      "Contact"
+   ],
+   "Mitwirkende": [
+      null,
+      "People involved"
+   ],
+   "Impressum": [
+      null,
+      "Legal"
+   ]
+}}
