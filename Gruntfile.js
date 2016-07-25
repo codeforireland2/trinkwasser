@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 			files: ['<%= jshint.files %>'],
 			tasks: ['jshint'],
       template: {
-        files: 'templates/**/*.handlebars',
+        files: ['templates/**/*.handlebars','src/data/configuration.json'],
         tasks: ['template']
       }
 		},
