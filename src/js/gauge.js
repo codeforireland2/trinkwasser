@@ -60,7 +60,7 @@
 
 		/** value */
 		var calculateBarY = function(value) {
-			var ratio = value < 1 ? 0 : value / limit;
+			var ratio = value <= 0 ? 0 : value / limit;
 			var y = yValueStart - Math.round(ratio * yValueMaxHeight) - 1;
 			return y;
 		};
