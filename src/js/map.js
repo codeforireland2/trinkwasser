@@ -7,9 +7,9 @@
 		var width = 1170;
 		var height = 1170;
 		var center = [9.171, 49.16];
-		var scale = 400;
-		var offset = [width / 2, height / 2];
-		var projection = d3.geo.mercator().scale(scale).center(center).translate(offset);
+		var mapScale = 400;
+		var mapOffset = [width / 2, height / 2];
+		var projection = d3.geo.mercator().scale(mapScale).center(center).translate(mapOffset);
 		var path = d3.geo.path().projection(projection);
 
 		var bounds = path.bounds(areaData);
@@ -32,7 +32,7 @@
 			'14-18': tw.data.zones['Heilbronn 14-18'],
 			'14': tw.data.zones['Heilbronn 14'],
 			'10': tw.data.zones['Heilbronn 10'],
-			'9': tw.data.zones['Heilbronn 9'],
+			'9': tw.data.zones['Heilbronn 9']
 		};
 
 		this.update = function(attribute) {
