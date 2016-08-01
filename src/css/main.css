@@ -247,3 +247,7 @@ svg text {
 		padding-left: 15px;
 	}
 }
+
+.zone-descriptions {
+  display: none;
+}

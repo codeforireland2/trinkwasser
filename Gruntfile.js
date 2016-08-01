@@ -11,7 +11,8 @@ module.exports = function(grunt) {
 				}],
 				templateData: 'src/data/configuration.json',
         helpers: 'handlebar/helpers/*.js',
-        globals: [ 'data/translations/en/for_use_drinking-water_messages_en.json']
+        globals: [ 'data/translations/en/for_use_drinking-water_messages_en.json'],
+        partials: ['templates/partials/*.handlebars']
 			}
 		},
 		uglify: {
@@ -139,7 +140,7 @@ module.exports = function(grunt) {
 			}
 		},
 		abideCreate: {
-			default: { // Target name.
+			json: { // Target name.
 				options: {
 					template: 'locale/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
 					languages: ['en-US', 'de'],
