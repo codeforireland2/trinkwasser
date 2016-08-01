@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2016-07-25 16:57+0000\n"
+"POT-Creation-Date: 2016-08-01 09:31+0000\n"
 
 #: templates/index.handlebars:1
 msgid "Was steckt in meinem Leitungswasser?"
@@ -66,10 +66,12 @@ msgid ""
 msgstr ""
 
 #: templates/index.handlebars:14
+#: templates/index.handlebars:15
 msgid "Die Daten stammen aus dem Jahr"
 msgstr ""
 
 #: templates/index.handlebars:15
+#: templates/index.handlebars:16
 msgid "Woher kommt unser Trinkwasser?"
 msgstr ""
 
@@ -95,4 +97,8 @@ msgstr ""
 
 #: templates/index.handlebars:20
 msgid "Impressum"
+msgstr ""
+
+#: templates/index.handlebars:14
+msgid "Information zu"
 msgstr ""

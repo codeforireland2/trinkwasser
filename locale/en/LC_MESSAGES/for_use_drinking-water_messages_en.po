@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 16:57+0000\n"
+"POT-Creation-Date: 2016-08-01 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mila Frerichs <mila.frerichs@gmail.com>, 2016\n"
 "Language-Team: English (https://www.transifex.com/civic-vision-os/teams/65390/en/)\n"
@@ -70,13 +70,13 @@ msgid ""
 "dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser."
 msgstr ""
 
-#: templates/index.handlebars:14
+#: templates/index.handlebars:14 templates/index.handlebars:15
 msgid "Die Daten stammen aus dem Jahr"
 msgstr "Data from year"
 
-#: templates/index.handlebars:15
+#: templates/index.handlebars:15 templates/index.handlebars:16
 msgid "Woher kommt unser Trinkwasser?"
-msgstr ""
+msgstr "Where does the drinking water come from?"
 
 #: templates/index.handlebars:16
 msgid ""
@@ -88,7 +88,7 @@ msgstr ""
 
 #: templates/index.handlebars:17
 msgid "Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser? "
-msgstr ""
+msgstr "Why does my tap water not taste as well as bottled water?"
 
 #: templates/index.handlebars:18
 msgid "Kontakt"
@@ -101,3 +101,7 @@ msgstr "People involved"
 #: templates/index.handlebars:20
 msgid "Impressum"
 msgstr "Legal"
+
+#: templates/index.handlebars:14
+msgid "Information zu"
+msgstr "Information for"
