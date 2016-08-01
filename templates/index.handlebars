@@ -347,7 +347,11 @@
                 {{ gettext "Die Daten stammen aus dem Jahr" }} <span class="zone-data-year"></span>
 								</p>
 								<p>
-									<span class="zone-description"></span>
+                {{#each locations}}
+                  <div id="zone-{{id}}" class="zone-descriptions zone-description-{{id}}">
+                    <span class="zone-description">{{> (lookup . 'id') }}</span>
+                  </div>
+                {{/each}}
 								</p>
 							</div>
 						</div>
