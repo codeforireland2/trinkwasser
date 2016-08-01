@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 				templateData: 'src/data/configuration.json',
         helpers: 'handlebar/helpers/*.js',
         globals: [ 'data/translations/en/for_use_drinking-water_messages_en.json'],
-        partials: ['templates/partials/*.handlebars']
+        partials: ['templates/partials/**/*.handlebars']
 			}
 		},
 		uglify: {
