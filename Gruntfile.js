@@ -148,6 +148,14 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+    abideMerge: {
+      json: { // Target name.
+        options: {
+          template: 'locale/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
+          localeDir: 'locale'
+        }
+      }
+    },
 		abideCompile: {
 			json: {
 				dest: 'data/translations/',
