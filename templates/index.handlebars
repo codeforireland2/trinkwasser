@@ -58,48 +58,11 @@
 						<div class="section section-explanation">
 							<div class="row gauge-glass-container" style="display:none;">
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-									<div class="attribute-description attribute-description-natrium" style="display:none;">
-										<p>Natrium reguliert den Wasserhaushalt.</p>
-										<p>Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.</p>
-										<p>Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und Muskelkrämpfen bis hin zum Kreislaufkollaps.</p>
-										<p>Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.</p>
-									</div>
-									<div class="attribute-description attribute-description-kalium" style="display:none;">
-										<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.</p>
-										<p>Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. durch lang andauernde Durchfallerkrankungen, Erbrechen
-											oder längere Einnahme von Entwässerungs- und Abführmitteln.</p>
-										<p>Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die Kontraktion des Herzmuskels hemmt.</p>
-									</div>
-									<div class="attribute-description attribute-description-calcium" style="display:none;">
-										<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
-										<p>An Calcium mangelt es oft, was was zu einer Verringerung der Knochenfestigkeit und damit zu Osteoporose führen kann.</p>
-									</div>
-									<div class="attribute-description attribute-description-magnesium" style="display:none;">
-										<p>Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
-											Knochenmineralisation. Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel verantwortlich.</p>
-										<p>Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt der Mineralstoff einen weicheren Stuhl.</p>
-									</div>
-									<div class="attribute-description attribute-description-chlorid" style="display:none;">
-										<p>Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation des Wasserhaushaltes mitverantwortlich. Auch für die
-											Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt ist Chlorid wichtig.</p>
-										<p>Da es in vielen Lebensmitteln vorkommt, wird meist mehr als genügend Chlorid aufgenommen. Eine dauerhafte Überversorgung mit
-											Chlorid kann zu Bluthochdruck führen.</p>
-									</div>
-									<div class="attribute-description attribute-description-nitrat" style="display:none;">
-										<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
-										<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p>
-										<p>Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem Grenzwert und sind daher als unbedenklich einzustufen.</p>
-										<p>Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter.</p>
-									</div>
-									<div class="attribute-description attribute-description-sulfat" style="display:none;">
-										<p>Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.</p>
-										<p>Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe Kontentrationen an Mineralstoffen wie Magnesium, Calcium,
-											Flourid, Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet.</p>
-										<p>Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung zur Bildung von Harnsäuresteinen sollten jedoch wenig
-											Sulfat zu sich nehmen (Gehalt &lt; 240 mg/l).</p>
-										<p>Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen
-											äußern sich in einem süßen bis bitterem Geschmack.</p>
-									</div>
+                  {{#each measures}}
+                    <div class="attribute-description attribute-description-{{id}}">
+                      {{> (lookup . 'id') }}
+                    </div>
+                  {{/each}}
 									<br />
                   <p><button type="button" class="btn btn-warning switch-to-section hidden-xs" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> {{ gettext "Vergleich mit Mineralwasser" }}</button></p>
 								</div>
