@@ -23,11 +23,12 @@ var tw = {
 		return idParts.join(' ');
 	};
 
-	var updateZoneInfo = function() {
+	var updateZoneInfo = function(zone) {
 		if (zoneData) {
-			$('.zone-id').text(zoneId);
+			$('.zone-id').text(zone.name);
 			$('.zone-data-year').text(zoneData.year);
-			$('.zone-description').html(zoneData.description);
+			$('.zone-descriptions').hide();
+			$('.zone-description-'+zone.id).show();
 			$('.zone-about').toggle((zoneData.year || zoneData.description) ? true : false);
 			$('.zone-year-container').toggle(zoneData.year ? true : false);
 		}
@@ -52,11 +53,11 @@ var tw = {
 		$('.welcome-text').toggle(!hasSelectedFirstLocation);
 
 		if (hasSelectedFirstLocation) {
-			var newZoneId = generateZoneId(city, district, zone);
-			if (newZoneId !== zoneId) {
-				zoneId = newZoneId;
-				zoneData = tw.data.zones[zoneId];
-				updateZoneInfo();
+      var newZone = tw.configuration.locations.filter(function(d) { return d.id === city; })[0];
+			if (newZone !== zone) {
+				zone = newZone;
+				zoneData = tw.data.zones[zone.name];
+				updateZoneInfo(zone);
 				updateAttributeContent();
 				updateDisabledTabs();
 			}

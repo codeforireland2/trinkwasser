@@ -34,7 +34,7 @@
 		<div class="choose-location">
 			<ul class="nav nav-tabs responsive" id="city-tabs">
         {{#each locations}}
-        <li class="nav-li-main"><a data-toggle="city-tab" data-attribute="{{name}}">{{name}}</a></li>
+        <li class="nav-li-main"><a data-toggle="city-tab" data-attribute="{{id}}">{{name}}</a></li>
         {{/each}}
 			</ul>
 		</div>
@@ -347,7 +347,11 @@
                 {{ gettext "Die Daten stammen aus dem Jahr" }} <span class="zone-data-year"></span>
 								</p>
 								<p>
-									<span class="zone-description"></span>
+                {{#each locations}}
+                  <div id="zone-{{id}}" class="zone-descriptions zone-description-{{id}}">
+                    <span class="zone-description">{{> (lookup . 'id') }}</span>
+                  </div>
+                {{/each}}
 								</p>
 							</div>
 						</div>
@@ -361,7 +365,7 @@
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse">
 									<div class="panel-body">
-                    <p>{{ gettext "Zwei Drittel des Wasserbedarfs der Stadt Münster werden in den vier münsterschen Wasserwerken Geist, Hohe Ward, Kinderhaus und Hornheide aufbereitet. Das restliche Drittel beziehen wir über die Gelsenwasser AG aus dem Haltener Wasserwerk." }}</p>
+                    {{> from }}
 									</div>
 								</div>
 							</div>
