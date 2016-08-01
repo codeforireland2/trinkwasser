@@ -271,6 +271,9 @@ var tw = {
       data.legalLimitsTexts = _.reduce(data.measures, function(result, d) { result[d.id] = d.legalLimitText; return result;}, {});
       tw.configuration = data;
       tw.data.averageValues = _.reduce(data.measures, function(result, d) { result[d.id] = d.average; return result;}, {});
+      d3.json("data/data.json", function(zones) {
+        tw.data.zones = zones;
+      });
       completeReferenceWaters();
       setupCityTabs();
       //setupForm();
