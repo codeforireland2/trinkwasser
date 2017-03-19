@@ -13,7 +13,6 @@
     var projection = d3.geo.mercator().scale(scale).center(center).translate(offset)
     var path = d3.geo.path().projection(projection)
 
-
     var bounds = path.bounds(areaData)
     var hscale = scale * width / (bounds[1][0] - bounds[0][0])
     var vscale = scale * height / (bounds[1][1] - bounds[0][1])
@@ -30,14 +29,12 @@
       return z(tw.utils.getMeanValue(d.properties.haertegrad))
     })
 
-
     var hnZones = {
       '14-18': tw.data.zones['Heilbronn 14-18'],
       '14': tw.data.zones['Heilbronn 14'],
       '10': tw.data.zones['Heilbronn 10'],
       '9': tw.data.zones['Heilbronn 9']
     }
-
 
     this.update = function (attribute) {
       var values = []
