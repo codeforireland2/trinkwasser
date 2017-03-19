@@ -41,8 +41,9 @@ tw.data.referenceWaters = {
   }
 }
 
+
 tw.data.nutrientDailyDosis = {
-  'kalium': '~ 2000 mg',
-  'calcium': '~ 1000 mg',
-  'magnesium': '~ 350 mg'
-}
+	"kalium": '~ 2000 mg',
+	"calcium": '~ 1000 mg',
+	"magnesium": '~ 350 mg'
+};

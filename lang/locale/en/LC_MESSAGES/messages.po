@@ -1,0 +1,1000 @@
+# Translators:
+# Duncan Healy <duncan.healy@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-13 10:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Duncan Healy <duncan.healy@gmail.com>, 2017\n"
+"Language-Team: English (https://www.transifex.com/codeforeurope/teams/72739/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/index.html:1 src/index.html:4
+msgid "Was steckt in meinem Leitungswasser?"
+msgstr "What is in my water?"
+
+#: src/index.html:2
+msgid ""
+"Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier "
+"kannst du es herausfinden - für den Stadt- und Landkreis Heilbronn"
+msgstr ""
+"Do you know what your tap water contains and how healthy it is? You can find"
+" out on this website."
+
+#: src/index.html:3 src/index.html:60
+msgid "Region Heilbronn"
+msgstr "English"
+
+#: src/index.html:5
+msgid "Ort"
+msgstr "Place"
+
+#: src/index.html:6
+msgid "Bitte auswählen"
+msgstr "Make a choice"
+
+#: src/index.html:7
+msgid "Ortsteil"
+msgstr "District"
+
+#: src/index.html:8
+msgid "Straße"
+msgstr "Street"
+
+#: src/index.html:9
+msgid "Weiter"
+msgstr "Next"
+
+#: src/index.html:10
+msgid "Derzeit sind Daten aus dem Stadt- und Landkreis Heilbronn auswählbar."
+msgstr "Data from the city and district of Heilbronn are currently available."
+
+#: src/index.html:11
+msgid "Natrium"
+msgstr "Sodium"
+
+#: src/index.html:12
+msgid "Kalium"
+msgstr "Potassium"
+
+#: src/index.html:13
+msgid "Calcium"
+msgstr "Calcium"
+
+#: src/index.html:14
+msgid "Magnesium"
+msgstr "Magnesium"
+
+#: src/index.html:15
+msgid "Chlorid"
+msgstr "Chloride"
+
+#: src/index.html:16
+msgid "Nitrat"
+msgstr "nitrate"
+
+#: src/index.html:17
+msgid "Sulfat"
+msgstr "sulfate"
+
+#: src/index.html:18
+msgid "Härte"
+msgstr "Hardness"
+
+#: src/index.html:19
+msgid "Fragen und Antworten"
+msgstr "Questions and answers"
+
+#: src/index.html:20
+msgid "Es liegen leider keine Werte für diesen Inhaltsstoff vor."
+msgstr "There are no values for this ingredient."
+
+#: src/index.html:21 src/index.html:72
+msgid "Natrium reguliert den Wasserhaushalt."
+msgstr "Sodium regulates the water balance."
+
+#: src/index.html:22
+msgid ""
+"Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: "
+"Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck"
+" oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro "
+"Liter) trinken."
+msgstr ""
+"How much sodium is suitable for whom is strongly dependent on the "
+"individual: Sportsmen are advised to use sodium-rich water, people with "
+"hypertensionOr infants should use low-sodium (less than 20 milligrams "
+"perLiters)."
+
+#: src/index.html:23
+msgid ""
+"Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und "
+"Muskelkrämpfen bis hin zum Kreislaufkollaps."
+msgstr ""
+"A deficiency of sodium manifests itself in physical weakness, nausea and "
+"Muscle cramps up to circulatory collapse."
+
+#: src/index.html:24
+msgid ""
+"Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich "
+"empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l"
+" Natrium geeignet."
+msgstr ""
+"Recommended are at least 550 mg sodium per day. Medical Recomendations for a"
+" medical  low sodium diet or for infants are less than 20 mg / l Sodium"
+
+#: src/index.html:25 src/index.html:75
+msgid ""
+"Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert "
+"den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die "
+"Nerven."
+msgstr ""
+"Potassium in water helps keeps electrolytes in balance, regulatingthe heart "
+"pressure and is important for a regular heart beat as well as thenervous "
+"system."
+
+#: src/index.html:26
+msgid ""
+"Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. "
+"durch lang andauernde Durchfallerkrankungen, Erbrechen oder längere Einnahme"
+" von Entwässerungs- und Abführmitteln."
+msgstr ""
+"In the case of a potassium deficiency it can be determined after major loss "
+"of liquid, eg By long-term diarrhea, vomiting or prolonged useOf drainage "
+"and laxatives"
+
+#: src/index.html:27
+msgid ""
+"Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die"
+" Kontraktion des Herzmuskels hemmt."
+msgstr ""
+"Too high a potassium content in the blood can lead to heart failure, since "
+"potassium can cause the heart muscle to be inhibited."
+
+#: src/index.html:28
+msgid ""
+"Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die "
+"Muskeln und die Blutgerinnung ist Calcium wichtig."
+msgstr ""
+"Calcium is used to form the bones and teeth. Calcium is also important for "
+"the muscles and blood coagulation."
+
+#: src/index.html:29
+msgid ""
+"An Calcium mangelt es oft, was was zu einer Verringerung der "
+"Knochenfestigkeit und damit zu Osteoporose führen kann."
+msgstr ""
+"There is often a lack of calcium, which leads to a reduction in the bone "
+"strength and thus lead to osteoporosis"
+
+#: src/index.html:30
+msgid ""
+"Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven "
+"auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation. "
+"Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel "
+"verantwortlich."
+msgstr ""
+"Magnesium influences the energy metabolism, the interplay of nerves On "
+"muscles, protein build-up, and bone mineralization.In addition, it is "
+"responsible for the activation of over 300 enzymes in the "
+"metabolismresponsible"
+
+#: src/index.html:31
+msgid ""
+"Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt "
+"der Mineralstoff einen weicheren Stuhl."
+msgstr ""
+"Too much magnesium is very unlikely. In large quantities the mineral has a "
+"laxative effect and mild nausea."
+
+#: src/index.html:32
+msgid ""
+"Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation "
+"des Wasserhaushaltes mitverantwortlich. Auch für die Nerven, das Herz und "
+"die Muskeln sowie den Säure-Basenhaushalt ist Chlorid wichtig."
+msgstr ""
+"Chloride is a component of cooking salt and is important for the retention "
+"of water, and also for regulation of the nerves, heart, andthe muscles as "
+"well as forming acid-base reactions."
+
+#: src/index.html:33
+msgid ""
+"Da es in vielen Lebensmitteln vorkommt, wird meist mehr als genügend Chlorid"
+" aufgenommen. Eine dauerhafte Überversorgung mit Chlorid kann zu "
+"Bluthochdruck führen."
+msgstr ""
+"Since it is found in many foods, usually we have more than enough chloride A"
+" permanent over-supply of chloride can lead tohigh blood pressure"
+
+#: src/index.html:34 src/index.html:81
+msgid ""
+"Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus "
+"Nitriten krebserregende Nitrosamine entstehen."
+msgstr ""
+"Nitrate is converted into toxic nitrite in the body. In addition,Nitrites "
+"produce carcinogenic nitrosamines"
+
+#: src/index.html:35 src/index.html:82
+msgid ""
+"Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und "
+"Gewebe bewirken. Säuglinge sind hierfür besonders anfällig."
+msgstr ""
+"The nitrite itself can supply oxygen to all organs andTissues, and infants "
+"are especially vulnerable."
+
+#: src/index.html:36
+msgid ""
+"Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der"
+" Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem Grenzwert"
+" und sind daher als unbedenklich einzustufen."
+msgstr ""
+"Therefore the limit value in mineral water is 50 mg / l. The drinking water "
+"of theRegion are between 5 and 38 mg / l below the limit valueAnd are "
+"therefore to be classified as harmless."
+
+#: src/index.html:37
+msgid "Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter."
+msgstr ""
+"For comparison: Lake Constance water contains only 4 mg nitrate per liter."
+
+#: src/index.html:38 src/index.html:83
+msgid ""
+"Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar "
+"abführend."
+msgstr ""
+"Sulfates have an effect on digestion, progressing to a laxative effect at a "
+"content of 1200 mg / l "
+
+#: src/index.html:39
+msgid ""
+"Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe "
+"Kontentrationen an Mineralstoffen wie Magnesium, Calcium, Flourid, "
+"Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet."
+msgstr ""
+"If a mineral water contains more than 1200 mg / l and highConcentrations of "
+"minerals such as magnesium, calcium, fluoride,Bicarbonate as well as carbon "
+"dioxide, it is referred to as medicinal water."
+
+#: src/index.html:40
+msgid ""
+"Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung "
+"zur Bildung von Harnsäuresteinen sollten jedoch wenig Sulfat zu sich nehmen "
+"(Gehalt < 240 mg/l)."
+msgstr ""
+"Infants and patients with diseases of the digestive tract and "
+"inclinationHowever, little sulphate should be added to the formation of uric"
+" acid stones(Content <240 mg / l)."
+
+#: src/index.html:41
+msgid ""
+"Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich "
+"meist positiv empfunden. Hohe Sulfatgehalte hingegen äußern sich in einem "
+"süßen bis bitterem Geschmack."
+msgstr ""
+"But also water with low sulphate levels are more pleasant to drink, while "
+"high sulfate contents are expressed in a Sweet to bitter taste."
+
+#: src/index.html:42 src/index.html:62
+msgid "Vergleich mit Mineralwasser"
+msgstr "Compare to bottled water"
+
+#: src/index.html:43 src/index.html:45
+msgid "mg/l"
+msgstr "mg/l"
+
+#: src/index.html:44
+msgid "Wert:"
+msgstr "Value:"
+
+#: src/index.html:46
+msgid "Grenzwert:"
+msgstr "Limit:"
+
+#: src/index.html:47
+msgid "Durchschnitt:"
+msgstr "Average:"
+
+#: src/index.html:48
+msgid "(Region Heilbronn, rote Linie)"
+msgstr "(Region Heilbronn, red line)"
+
+#: src/index.html:49
+msgid "Tagesbedarf:"
+msgstr "Daily necessities"
+
+#: src/index.html:50 src/index.html:71
+msgid "~"
+msgstr "~"
+
+#: src/index.html:51
+msgid ""
+"Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium"
+" und Magnesium in einem Wasser enthalten sind, desto härter ist es."
+msgstr ""
+"The water hardness indicates how soft or hard a water is. The more calcium "
+"And magnesium are contained in a water, the harder it is."
+
+#: src/index.html:52
+msgid ""
+"Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem "
+"hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser."
+msgstr ""
+"Hard water can cause lime stains in kitchen and bathroom Because of itsHigh "
+"calcium and magnesium content makes it healthier than soft water."
+
+#: src/index.html:53
+msgid ""
+"(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und "
+"Nerven)"
+msgstr ""
+"(Calcium: build-up of bones and teeth, magnesium: build-up of muscles "
+"andnerves)"
+
+#: src/index.html:54
+msgid "Wert"
+msgstr "Value"
+
+#: src/index.html:55 src/index.html:57 src/index.html:61
+msgid "°dH"
+msgstr "°dH"
+
+#: src/index.html:56
+msgid "Restalkalität"
+msgstr "alkalinity"
+
+#: src/index.html:58
+msgid "Bereich"
+msgstr "Area"
+
+#: src/index.html:59
+msgid "Durchschnitt"
+msgstr "average"
+
+#: src/index.html:63
+msgid "Volvic"
+msgstr "Volvic"
+
+#: src/index.html:64
+msgid "Wüteria Heiligenquelle"
+msgstr "Wüteria Heiligenquelle"
+
+#: src/index.html:65
+msgid "Teusser Naturell"
+msgstr "Teusser Naturell"
+
+#: src/index.html:66
+msgid "Vittel"
+msgstr "Vittel"
+
+#: src/index.html:67 src/index.html:68
+msgid "mein Leitungswasser"
+msgstr "My tap water"
+
+#: src/index.html:69
+msgid "(rote Linie)"
+msgstr "(Red line)"
+
+#: src/index.html:70
+msgid "Tagesbedarf"
+msgstr "Daily necessities"
+
+#: src/index.html:73
+msgid ""
+"Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck"
+" oder Säuglinge sollten natriumarmes Wasser trinken."
+msgstr ""
+"Sportsmen are advised to use sodium-rich water, people with hypertensionor "
+"infants should drink low-sodium water."
+
+#: src/index.html:74
+msgid "(weniger als 20 mg/l)"
+msgstr "(Less than 20 mg / l)"
+
+#: src/index.html:76
+msgid "Calcium wird zur Bildung der Knochen und Zähne gebraucht."
+msgstr "Calcium is used to form the bones and teeth."
+
+#: src/index.html:77
+msgid "Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig."
+msgstr "Calcium is also important for muscles and blood clotting."
+
+#: src/index.html:78
+msgid ""
+"Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven "
+"auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation."
+msgstr ""
+"Magnesium influences the energy metabolism, the interplay of nerves on "
+"muscles, protein build-up, and bone mineralization."
+
+#: src/index.html:79
+msgid ""
+"Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und "
+"die Muskeln sowie den Säure-Basenhaushalt wichtig."
+msgstr ""
+"Chloride is necessary for regulation of hydration, the nerves, the heart and"
+" the muscles as well as the acid basic reactions."
+
+#: src/index.html:80
+msgid ""
+"Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist "
+"mehr als genügend Chlorid aufgenommen."
+msgstr ""
+"Since chloride is a constituent of salt, food usually contains more than "
+"enough chloride."
+
+#: src/index.html:84
+msgid "Zurück"
+msgstr "Back"
+
+#: src/index.html:85
+msgid ""
+"Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus "
+"dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser."
+msgstr ""
+"By way of example, two superregional water and two water fromThe district of"
+" Heilbronn, all four are still mineral water."
+
+#: src/index.html:86
+msgid ""
+"Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und "
+"befindet sich noch in einem experimentellen Stadium."
+msgstr ""
+"The map is currently only available for the city of Heilbronn and is still "
+"in an experimental stage."
+
+#: src/index.html:87
+msgid ""
+"Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den "
+"höchsten Werten rot eingefärbt."
+msgstr ""
+"The roads with the lowest values are deep blue, the streets with the highest"
+" values red colored."
+
+#: src/index.html:88
+msgid "Information zu"
+msgstr "Information"
+
+#: src/index.html:89
+msgid "Die Daten stammen aus dem Jahr"
+msgstr "The data are from the year"
+
+#: src/index.html:90
+msgid "Woher kommt unser Trinkwasser?"
+msgstr "Where does our drinking water come from?"
+
+#: src/index.html:91
+msgid ""
+"Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es etwa"
+" 130."
+msgstr ""
+"There are about 40 springs and wells in the city, about one quarter of them "
+"are130."
+
+#: src/index.html:92
+msgid ""
+"Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat "
+"belastet ist, kauft die Stadt seit 43 Jahren Wasser vom Bodensee "
+"(Zweckverband Bodensee-Wasserversorgung)."
+msgstr ""
+"Since the Heilbronn water is very hard and strong with toxic nitrateIs "
+"burdened, the city has been buying water from Lake Constance for 43 "
+"years(Zweckverband Bodensee water supply)."
+
+#: src/index.html:93
+msgid ""
+"Zuvor deckte die Stadt den Wasserbedarf über 60 bis 70 Prozent Eigenwasser. "
+"Dies hat sich ins Gegenteil gekehrt. Der Anteil an Bodenseewasser liegt "
+"heute bei 80 bis 85 Prozent."
+msgstr ""
+"Previously, the city covered the water requirement over 60 to 70 percent of "
+"its own water.This has turned out to be the opposite: the proportion of lake"
+" water isToday at 80 to 85 percent."
+
+#: src/index.html:94
+msgid ""
+"Warum verzichten manche Kommunen auf die Beimischung von Bodenseewasser?"
+msgstr "Why do some municipalities forgo the admixture of lake water?"
+
+#: src/index.html:95
+msgid ""
+"Günstiger ist es für die Kommunen, wenn sie ihr Trinkwasser ausschließlich "
+"aus eigenen Quellen beziehen."
+msgstr ""
+"It is more favorable for the municipalities to supply their drinking water "
+"exclusivelyFrom their own sources."
+
+#: src/index.html:96
+msgid ""
+"Die Gemeinde Jagsthausen beispielsweise versorgt ihre Einwohner zu 100 "
+"Prozent mit Eigenwasser."
+msgstr ""
+"The municipality of Jagsthausen, for example, supplies its inhabitants with "
+"100 percent of their water."
+
+#: src/index.html:97
+msgid ""
+"Wir haben hier ordentliches Wasser, das zwar hart ist. Aber wir sehen keinen"
+" Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen tun"
+msgstr ""
+"We have decent water here, which is hard, but we do not see anyThe reason "
+"for an admixture of foreign water, as other municipalities do"
+
+#: src/index.html:98
+msgid "Bürgermeister Roland Halter"
+msgstr "Bürgermeister Roland Halter"
+
+#: src/index.html:99
+msgid ""
+"Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine "
+"Enthärtungsanlage. Eine Anbindung an Bodenseewasser sei im Fall von "
+"Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema."
+msgstr ""
+"There were no complaints from the community, many inhabitants had aSoftening"
+" system: A link to the lake water in the case ofJagsthausen associated with "
+"high investment costs and currently no topic."
+
+#: src/index.html:100
+msgid "Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser?"
+msgstr "Why does not my drinking water taste as good as mineral water?"
+
+#: src/index.html:101 src/index.html:111
+msgid ""
+"Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien "
+"bestimmt."
+msgstr ""
+"The taste of water is determined by the minerals contained in itcertainly."
+
+#: src/index.html:102
+msgid ""
+"Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack "
+"empfunden. Natriumarmes Wasser - wie das Heilbronner Trinkwasser - hingegen "
+"schmeckt milder."
+msgstr ""
+"Water with a lot of sodium and potassium, is considered salty in "
+"tasteSodium-poor water - like the Heilbronner drinking water - on the other "
+"handTastes smoother."
+
+#: src/index.html:103
+msgid ""
+"Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im Gebäude"
+" verunreinigt sind. Die Stadtwerke kontrollieren die Trinkwasserqualität nur"
+" bis zur jeweiligen Haustüre. Im Haus liegt die Verantwortung beim "
+"Gebäudeeigentümer."
+msgstr ""
+"An unpleasant taste can arise when the pipes in the building.The "
+"municipalities control the drinking water quality onlyto the the house - the"
+" ultimate responsibility lies with theBuilding owner."
+
+#: src/index.html:104
+msgid "Was bedeutet die Wasserhärte für mich?"
+msgstr "What does water hardness mean to me?"
+
+#: src/index.html:105
+msgid ""
+"Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt "
+"wird, setzt sich Kalk ab. In Küche und Bad entstehen so Kalkflecken, beim "
+"Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen "
+"regelmäßig entkalkt werden. Dies gilt ab einem Wasserhärtegrad von 21."
+msgstr ""
+"Everywhere where hard water flows slowly or is heated to over 60 degrees, "
+"Lime settles down in the kitchen and bathroom so lime stains arise, at "
+"theLaundry is more detergent necessary, some household appliances mustIs "
+"regularly decalcified from a water hardness of 21."
+
+#: src/index.html:106
+msgid ""
+"In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. "
+"Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil: wegen des "
+"hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser."
+msgstr ""
+"In Heilbronn, the upper limit of water hardness is 18 degrees.Health is not "
+"a threat to hard water, on the contrary, because of theHigh calcium and "
+"magnesium content makes it healthier than soft water."
+
+#: src/index.html:107
+msgid "Warum gibt es bei uns kein weiches Trinkwasser?"
+msgstr "Why is there no soft drinking water?"
+
+#: src/index.html:108
+msgid ""
+"Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der "
+"Gesteinsschicht Gipskeuper, der für den sehr hohen Magnesium- und "
+"Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den "
+"Härtegrad des Wassers bestimmen, gibt es in Heilbronn kein weiches Wasser."
+msgstr ""
+"Most of the Heilbronn drinking water fountains are located in theRock layer "
+"Gipskeuper, which stands for the very high magnesium andCalcium content in "
+"the water is responsible because these two mineralsDetermine the hardness of"
+" the water, there is no soft water in Heilbronn."
+
+#: src/index.html:109
+msgid ""
+"Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher "
+"Härte, in manchen der 40 Brunnen fließt Wasser mit 30 Grad deutscher Härte."
+msgstr ""
+"The Heilbronn water has a degree of hardness of up to 28 degrees of "
+"GermanHardness, in some of the 40 wells water flows with 30 degrees of "
+"German hardness."
+
+#: src/index.html:110
+msgid "Wie entstehen die verschiedenen Härtegrade?"
+msgstr "How do the various degrees of hardness develop?"
+
+#: src/index.html:112
+msgid ""
+"Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und "
+"Magnesium - je nachdem ob es sich um Oberflächen-, Grund oder Quellwasser "
+"handelt."
+msgstr ""
+"Drinking water contains various amounts of calcium andMagnesium - depending "
+"on whether it is surface, ground or spring water"
+
+#: src/index.html:113
+msgid "Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es."
+msgstr "The more calcium and magnesium in the water, the harder it is."
+
+#: src/index.html:114
+msgid "Einheit °dH - Grad deutscher Härte?"
+msgstr "Unit ° dH - degree of German hardness?"
+
+#: src/index.html:115
+msgid ""
+"Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach"
+" wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet."
+msgstr ""
+"The unit ° dH (degree of German hardness) is obsolete, but in practice "
+"according toAs is customary. Millimol per liter (mmol / l) is used alongside"
+" ° dH."
+
+#: src/index.html:116
+msgid "Bereiche:"
+msgstr "Areas:"
+
+#: src/index.html:117
+msgid ""
+"weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger"
+" als 8,4 Grad deutscher Härte)"
+msgstr ""
+"Soft: less than 1.5 millimoles of calcium carbonate per liter (equivalent to"
+" lessAs 8.4 degrees of German hardness)"
+
+#: src/index.html:118
+msgid ""
+"mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14"
+" Grad deutscher Härte)"
+msgstr ""
+"Medium: 1.5 to 2.5 millimoles of calcium carbonate per liter (equivalent to "
+"8.4 to 14Degree of German hardness)"
+
+#: src/index.html:119
+msgid ""
+"hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14"
+" Grad deutscher Härte)"
+msgstr ""
+"Hard: more than 2.5 millimoles of calcium carbonate per liter (equivalent to"
+" more than 14Degree of German hardness)"
+
+#: src/index.html:120
+msgid "Weiterführende Links"
+msgstr "Related Links"
+
+#: src/index.html:121
+msgid "http://www.stimme.de/3047311"
+msgstr "http://www.stimme.de/3047311"
+
+#: src/index.html:122
+msgid "Heilbronner Wasser: Reich an Mineralien (Stimme.de, 22.03.2014)"
+msgstr "Heilbronn water: rich in minerals (Stimme.de, 22.03.2014)"
+
+#: src/index.html:123
+msgid "http://www.gesetze-im-internet.de/bundesrecht/trinkwv_2001/gesamt.pdf"
+msgstr "http://www.gesetze-im-internet.de/bundesrecht/trinkwv_2001/gesamt.pdf"
+
+#: src/index.html:124
+msgid "Trinkwasserverordnung"
+msgstr "Drinking water regulation"
+
+#: src/index.html:125
+msgid ""
+"http://www.mlr.baden-wuerttemberg.de/mlr/allgemein/Liste%20d"
+"%20Untersuchungsstellen-Trinkw.pdf"
+msgstr ""
+"http://www.mlr.baden-wuerttemberg.de/mlr/allgemein/Liste%20d"
+"%20Untersuchungsstellen-Trinkw.pdf"
+
+#: src/index.html:126
+msgid "Liste an Laboren zur Untersuchung der Trinkwasserqualität"
+msgstr "List of laboratories for the study of drinking water quality"
+
+#: src/index.html:127
+msgid ""
+"http://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/rund_um_das_trinkwasser.pdf"
+msgstr ""
+"http://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/rund_um_das_trinkwasser.pdf"
+
+#: src/index.html:128
+msgid "Broschüre des Umweltbundesamts"
+msgstr "Brochure of the Federal Environment Agency"
+
+#: src/index.html:129
+msgid "https://www.stadtwerke-heilbronn.de/index/hsw/hsw_wasser.html"
+msgstr "https://www.stadtwerke-heilbronn.de/index/hsw/hsw_wasser.html"
+
+#: src/index.html:130
+msgid "Stadtwerke Heilbronn, Rubrik Wasser"
+msgstr "Heilbronn, category Water"
+
+#: src/index.html:131
+msgid "Quellen"
+msgstr "Sources"
+
+#: src/index.html:132
+msgid "Heilbronner Versorgungs Gmbh"
+msgstr "Heilbronn"
+
+#: src/index.html:133
+msgid "Deutsche Gesellschaft für Ernährung"
+msgstr "German Society for Nutrition"
+
+#: src/index.html:134
+msgid "Bundesinstitut für Risikobewertung"
+msgstr "Federal Institute for Risk Assessment"
+
+#: src/index.html:135
+msgid "Webseiten der Gemeinden im Landkreis Heilbronn"
+msgstr "Website of the municipalities in the district Heilbronn"
+
+#: src/index.html:136 src/index.html:173
+msgid "Kontakt"
+msgstr "Contact"
+
+#: src/index.html:137
+msgid "Über das Projekt"
+msgstr "About the project"
+
+#: src/index.html:138 src/index.html:152
+msgid "Mitwirkende"
+msgstr "Contributors"
+
+#: src/index.html:139 src/index.html:161
+msgid "Impressum"
+msgstr "About us"
+
+#: src/index.html:140
+msgid "Über &amp; Impressum"
+msgstr "About & amp; "
+
+#: src/index.html:141
+msgid "Wie das Trinkwasser-Tool entstanden ist"
+msgstr "How the drinking water tool came into being"
+
+#: src/index.html:142
+msgid ""
+"Trinkwasser gilt als das am besten kontrollierte Lebensmittel in "
+"Deutschland. Und trotzdem wissen wir sehr wenig über das Wasser, das bei uns"
+" aus dem Hahn kommt. Viele Kommunen veröffentlichen die "
+"Untersuchungsergebnisse auf ihren Webseiten. Für den Bürger sind diese Daten"
+" abrufbar - aber nicht greifbar. Was bedeutet ein Härtegrad von 9? Sind 200 "
+"Milligramm Calcium pro Liter viel oder wenig? Wie mineralreich unser "
+"Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem Handel "
+"vergleichen."
+msgstr ""
+"Drinking water is considered to be the most controlled food inGermany, and "
+"yet we know very little about the water that is with usComes from the tap "
+"Many municipalities publish theExamination results on their websites. For "
+"the citizen, these dataCan be retrieved - but not tangible, what does a "
+"hardness of 9Milligram calcium per liter much or little? How mineral ourLead"
+" water is only shown when we are dealing with water from the tradeto "
+"compare."
+
+#: src/index.html:143
+msgid ""
+"Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende "
+"Februar beim Open Data Day in Heilbronn. Obwohl viele Daten online verfügbar"
+" waren, mussten sie zuerst in eine maschinenlesbare Form gebracht werden. "
+"Viele Kommunen veröffentlichen nur PDF-Dateien mit den "
+"Jahresdurchschnittswerten. Diese sind nicht maschinenlesbar und mussten von "
+"der Redaktion übertragen werden.  Um die Anwendung zu programmieren, ist ein"
+" einheitlicher Datensatz notwendig. Auf manchen Webseiten der Kommunen waren"
+" die gesuchten Informationen über das Trinkwasser auf Unterseiten versteckt,"
+" veraltet oder nicht vollständig. Bei vielen Städten und Gemeinden haben wir"
+" deshalb per Email die Daten abgefragt. Nur von drei Kommunen kam bisher "
+"keine Rückmeldung."
+msgstr ""
+"This is now possible for the Heilbronn region, and the idea came to an "
+"endFebruary at the Open Data Day in Heilbronn. Although many data are "
+"available online, They had to be first put into a machine-readable form.Many"
+" communities publish only PDF files with theAnnual averages, which are not "
+"machine-readable and had to beTo the editor, and to program the application,"
+" aA common dataset was necessary On some websites of the municipalitiesThe "
+"information sought on the drinking water hidden on bottoms,Obsolete or not "
+"complete In many cities and communities we haveTherefore the data is "
+"requested by email, only three municipalities have so far receivedno "
+"respond."
+
+#: src/index.html:144
+msgid ""
+"Überraschend war für uns, wie unterschiedlich das Trinkwasser in der Region "
+"zusammengesetzt ist. Teilweise differiert der Mineraliengehalt innerhalb "
+"einer Ortschaft sehr stark - nämlich dann, wenn es verschiedene "
+"Versorgungsbereiche gibt. Kommunen wie Bad Friedrichshall, Neckarsulm oder "
+"Zaberfeld sind in mehrere Gebiete eingeteilt. Dies war in der Phase der "
+"Datenerhebung eine besondere Herausforderung. Die Gebiete mussten teilweise "
+"noch den Straßen zugeordnet werden, damit der Benutzer auch die korrekten "
+"Werte für seine eigene Straße angezeigt bekommt. Zu den Trinkwasserpreisen "
+"bietet das Statistische Landesamt einen vollständigen Datensatz für alle "
+"Landkreise - für die Trinkwasserqualität gibt es einen solchen öffentlichen "
+"Datensatz leider nicht."
+msgstr ""
+"We were surprised how different the drinking water in the regionIn part, the"
+" mineral content differs withinA village very strong - namely, when there "
+"are differentThere are municipalities like Bad Friedrichshall, Neckarsulm "
+"orZaberfeld are divided into several areas, which was in the phase of "
+"theData collection was a particular challenge, the areas had to be "
+"partiallyStill be assigned to the streets so that the user can also use the "
+"correctValues for his own street. To the drinking water prices The "
+"Statistical Office offers a complete data set for allLandkreise - for the "
+"drinking water quality there is such a publicUnfortunately, not a record."
+
+#: src/index.html:145
+msgid ""
+"Der dieser Anwendung zugrundliegende Datensatz war deshalb ein aufwändiges "
+"Rechercheprojekt. Nicht weniger aufwändig waren für die Entwickler Felix "
+"Ebert, Ulrich Stech und Tom Görner Umsetzung und Visualisierung. Eine große "
+"Rolle spielten dabei Benutzerfreundlichkeit und Design. Aus trockenen Zahlen"
+" sollte eine interaktive Grafik entstehen, durch die der Benutzer einen "
+"Zugang zu seinem Trinkwasser bekommt. Für die grafischen Elemente war Heiko "
+"Nicht verantwortlich."
+msgstr ""
+"The data set for this application was therefore an elaborateThe research "
+"project. No less elaborate were the developers Felix Ebert, Ulrich Stech and"
+" Tom Görner Implementation and visualization A largeRole played user-"
+"friendliness and design, from dry figuresShould create an interactive "
+"graphic, through which the user can create aAccess to his drinking water For"
+" the graphic elements, Heiko wasNot responsible."
+
+#: src/index.html:146
+msgid ""
+"Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die Datenerhebung"
+" kann nie abgeschlossen werden. Viele Kommunen veröffentlichen bald wieder "
+"die aktuellen Jahresmittelwerte - diese sollen auch in unserer Anwendung "
+"aktualisiert werden. Wir sind dabei auf die Mitarbeit der Rathäuser "
+"angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund des großen "
+"Datensatzes kann es zu fehlerhaften Angaben kommen. Wer Auffälligkeifen "
+"entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns auch über "
+"Feedback."
+msgstr ""
+"The drinking water application is a beta version, especially data "
+"collectionCan never be concluded, and many municipalities are re-publishing "
+"soonThe current annual mean values - these should also be in our "
+"applicationWe are working on the cooperation of the city councilsAnd have "
+"established a contact area because of the largeData records can lead to "
+"incorrect data, Can contact us at any time, we also look forward toFeedback."
+
+#: src/index.html:147
+msgid ""
+"Datensatz und Code der Anwendung sind öffentlich zugänglich und stehen unter"
+" einer Open Source-Lizenz."
+msgstr ""
+"The application's record and code are publicly available and are available "
+"underAn open source license."
+
+#: src/index.html:148
+msgid ""
+"Du bist an weiteren Open Data Anwendungen interessiert oder möchtest selbst "
+"mitwirken? In Heilbronn treffen wir uns regelmäßig im Rahmen von"
+msgstr ""
+"You are interested in other OpenData applications or would like to haveIn "
+"Heilbronn we regularly meet in the framework of"
+
+#: src/index.html:149 src/index.html:158
+msgid "http://codefor.de"
+msgstr "http://codefor.de http://github.com/codeforeurope"
+
+#: src/index.html:150 src/index.html:159
+msgid "Code for Germany"
+msgstr "Code for Europe"
+
+#: src/index.html:151 src/index.html:160
+msgid ""
+"um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen "
+"Besuch freuen!"
+msgstr ""
+"To implement OpenData projects together - we would talk about yourGreat "
+"place to stay"
+
+#: src/index.html:153
+msgid "Redaktionelle Umsetzung"
+msgstr "Editorial implementation"
+
+#: src/index.html:154
+msgid "Gestaltung"
+msgstr "layout"
+
+#: src/index.html:155
+msgid "Programmierung"
+msgstr "programming"
+
+#: src/index.html:156
+msgid "Mitarbeit"
+msgstr "Cooperation"
+
+#: src/index.html:157
+msgid "In Heilbronn treffen wir uns regelmäßig im Rahmen von"
+msgstr "We meet regularly in Heilbronn within the framework of"
+
+#: src/index.html:162
+msgid "IF-Core IT Services GmbH"
+msgstr "IF-Core IT Services GmbH"
+
+#: src/index.html:163
+msgid "Clemenshaller Str. 5"
+msgstr "Clemenshaller Str. 5"
+
+#: src/index.html:164
+msgid "74254 Offenau"
+msgstr "74254 Offenau"
+
+#: src/index.html:165
+msgid "T. 07136 / 830 26 30"
+msgstr "T. 07136 / 830 26 30"
+
+#: src/index.html:166
+msgid "F. 07136 / 830 26 27"
+msgstr "F. 07136 / 830 26 27"
+
+#: src/index.html:167 src/index.html:175
+msgid "E-Mail:"
+msgstr "Email:"
+
+#: src/index.html:168
+msgid "info"
+msgstr "info"
+
+#: src/index.html:169
+msgid "if-core.de"
+msgstr "if-core.de"
+
+#: src/index.html:170
+msgid "HRB 108620 (Amtsgericht Stuttgart)"
+msgstr "HRB 108620 (Amtsgericht Stuttgart)"
+
+#: src/index.html:171
+msgid "USt-IdNr.: DE236085681"
+msgstr "USt-IdNr.: DE236085681"
+
+#: src/index.html:172
+msgid "Geschäftsführer: Felix Ebert"
+msgstr "Managing Director: Felix Ebert"
+
+#: src/index.html:174
+msgid "Wir freuen uns über Feedback:"
+msgstr "Thank you for your Feedback:"
+
+#: src/index.html:176
+msgid "wasser"
+msgstr "water"
+
+#: src/index.html:177
+msgid "opendatalab.de"
+msgstr "opendatalab.de"
+
+#: src/index.html:178
+msgid ""
+"Aufgrund der zahlreichen Daten kann es vereinzelt zu fehlerhaften Angaben "
+"kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!"
+msgstr ""
+"Due to the amount of data it can contain erroneous dataIf you have spotted "
+"an error in this product's information please tell us about it below."
+
+#: src/index.html:179
+msgid ""
+"Oder sind Sie Mitarbeiter einer Kommune und möchten Ihre Daten eintragen? "
+"Schicken Sie uns einfach Ihre Daten per E-Mail."
+msgstr ""
+"Or are you a member of a municipality and would like to enter your data?Just"
+" send us your data by e-mail."

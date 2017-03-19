@@ -24,14 +24,19 @@ a {
 h1 {
 	margin-bottom: 24px;
 }
-.state-1 h1 {
-	margin: 1.5em 0 0.75em 0;
+.welcome-text {
+  font-size: 20px;
+  margin: 50px;
+}
+.gauge-description .attribute-description {
+  font-size: 14px;
 }
 .form-choose-location-quick {
 	margin: 10px 0 60px 0;
 }
 .highlight {
 	color: #FFBE17;
+  font-weight: bold;
 }
 .footer a,
 .footer {
@@ -39,7 +44,6 @@ h1 {
 	font-size: 12px;
 }
 .footer {
-	margin: 100px 0 100px 0;
 	text-align: center;
 }
 h2 {
@@ -149,11 +153,13 @@ svg text {
 	fill: none;
 }
 .gauge-description li {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 .gauge-description {
 	margin-top: 48px;
 	margin-right: 16px;
+  font-size: 150%;
+  width: 225px;
 }
 .gauge-values path,
 .gauge-value,
@@ -240,4 +246,8 @@ svg text {
 	.compare-nav {
 		padding-left: 15px;
 	}
+}
+
+.zone-descriptions {
+  display: none;
 }

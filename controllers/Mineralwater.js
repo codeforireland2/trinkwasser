@@ -1,3 +1,8 @@
+/*
+http://www.eupedia.com/europe/european_mineral_waters.shtml
+*/
+
+
 (function () {
   'use strict'
   var company = require('../models/Company.js')
@@ -20,6 +25,11 @@
     var sulfat = new Code.model({standard: 'CAS', value: '14808-79-8', label: 'Sulfate'})
     var hydrogene = new Code.model({standard: 'CAS', value: '1333-74-0', label: 'Hydrogen'})
     var nitrat = new Code.model({standard: 'CAS', value: '14797-55-8', label: 'Nitrate'})
+    var bicarbonate = new Code.model({standard: 'CAS', value: '', label: 'Bicarbonate (HCO3)'})
+    var silica = new Code.model({standard: 'CAS', value: '3163-01-7', label: 'Silicate'})
+    var trihalomethane = new Code.model({standard: 'CAS', value: '', label: 'Trihalomethanes (THMS)'})
+    var microbacteria = new Code.model({standard: 'CAS', value: '', label: 'Microbacteria'})
+     
 
     var wueteria = new company.model({
       code: 'wueteria',
@@ -39,6 +49,85 @@
       url: 'http://join-the-pipe.org/',
       country: 'Netherlands'
     })
+    var vittel = new company.model({
+      code: 'vittel',
+      name: 'Vittel',
+      url: 'www.nestle-waters.com/brands/vittel',
+      country: ''
+    })
+     var volvic = new company.model({
+      code: 'volvic',
+      name: 'Volvic',
+      url: 'www.nestle-waters.com/brands/vittel',
+      country: ''
+    })   
+    /*	"salvus": {
+		"natrium": 19.9,
+		"kalium": 1.1,
+		"calcium": 76,
+		"magnesium": 4,
+		"chlorid": 50,
+		"nitrat": 0,
+		"sulfat": 40,
+		"sources": ["http://www.salvus.de/produkte/salvus-mineralwasser-naturell/"]
+	},
+	"apodis": {
+		"natrium": 19,
+		"kalium": 1.3,
+		"calcium": 110.2,
+		"magnesium": 5.9,
+		"chlorid": 42,
+		"nitrat": 0,
+		"sulfat": 73,
+		"sources": ["http://www.mineralwasser-genuss.de/apodis/"]
+	},
+	"sawell": {
+		"natrium": 22,
+		"kalium": 0.7,
+		"calcium": 76,
+		"magnesium": 3.8,
+		"chlorid": 52,
+		"nitrat": 0,
+		"sulfat": 52,
+		"sources": ["http://www.mineralwasser-genuss.de/sawell/"]
+	},
+
+  */
+      var volvic = new product.model({
+      name: 'Volvic',
+      observations: [
+        new observation.model({value: 11.6, uom: mg_l, eqr: natrium}),
+        new observation.model({value: 71, uom: mg_l, eqr: bicarbonate}),
+        new observation.model({value: 31.7, uom: mg_l, eqr: silica}),
+        new observation.model({value: 6.2, uom: mg_l, eqr: kalium}),
+        new observation.model({value: 11.5, uom: mg_l, eqr: calcium}),
+        new observation.model({value: 8, uom: mg_l, eqr: magnesium}),
+        new observation.model({value: null, uom: mg_l, eqr: fluorid}),
+        new observation.model({value: 13.5, uom: mg_l, eqr: chlorid}),
+        new observation.model({value: 8.1, uom: mg_l, eqr: sulfat}),
+        new observation.model({value: null, uom: mg_l, eqr: hydrogene}),
+        new observation.model({value: 6.9, uom: mg_l, eqr: nitrat}) //6.3 Wikipedia
+      ],
+      sources: ['http://books.google.de/books?id=lzEoGWyqMBwC&pg=PA198&lpg=PA198&dq=volvic+nitratgehalt&source=bl&ots=pJEE0i9HwK&sig=OI_PeSr_QGBCfpeVCu70N4ohy8g&hl=de&ei=4-yvSuHrJ8jK_gbV0p3ZDA&sa=X&oi=book_result&ct=result&resnum=6#v=onepage&q&f=false'],
+      vendor: volvic
+    })
+      var vittel = new product.model({
+      name: 'Vittel',
+      observations: [
+        new observation.model({value: 7.7, uom: mg_l, eqr: natrium}),
+        new observation.model({value: 5.2, uom: mg_l, eqr: kalium}),
+        new observation.model({value: 94, uom: mg_l, eqr: calcium}),
+        new observation.model({value: 20, uom: mg_l, eqr: magnesium}),
+        new observation.model({value: 0.22, uom: mg_l, eqr: fluorid}),
+        new observation.model({value: 3.8, uom: mg_l, eqr: chlorid}),
+        new observation.model({value: 120, uom: mg_l, eqr: sulfat}),
+        new observation.model({value: 455, uom: mg_l, eqr: hydrogene}),
+        new observation.model({value: 120, uom: mg_l, eqr: nitrat})
+      ],
+      sources: ['http://books.google.de/books?id=lzEoGWyqMBwC&pg=PA198&lpg=PA198&dq=volvic+nitratgehalt&source=bl&ots=pJEE0i9HwK&sig=OI_PeSr_QGBCfpeVCu70N4ohy8g&hl=de&ei=4-yvSuHrJ8jK_gbV0p3ZDA&sa=X&oi=book_result&ct=result&resnum=6#v=onepage&q&f=false"]'],
+      vendor: vittel
+    })
+
     var heiligenquelleclassic = new product.model({
       name: 'HEILIGENQUELLE CLASSIC',
       observations: [
@@ -71,7 +160,7 @@
       vendor: teusser
     })
 
-    var output = [heiligenquelleclassic.toObject(), teussernaturell.toObject()]
+    var output = [heiligenquelleclassic.toObject(), teussernaturell.toObject(), vittel.toObject(), volvic.toObject()]
     res.setHeader('content-type', 'application/json')
     res.setHeader('charset', 'utf-8')
     res.end(JSON.stringify(output, null, 2))

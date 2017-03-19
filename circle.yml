@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 0.10.22
+deployment:
+  production:
+    branch: master
+    commands:
+      - git config --global user.name "$USER_NAME"
+      - git config --global user.email "$USER_EMAIL"
+      - npm run deploy
