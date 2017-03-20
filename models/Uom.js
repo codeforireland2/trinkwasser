@@ -15,10 +15,10 @@
     definition: String,
     entered_at: {type: Date, required: true, default: Date}
   })
-schema.pre('init', function(next) {
-  console.log('construct UOM')
-  next()
-})
+  schema.pre('init', function (next) {
+    console.log('construct UOM')
+    next()
+  })
   exports.schema = schema
   exports.model = mongoose.model('Uom', schema)
 }())

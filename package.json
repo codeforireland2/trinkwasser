@@ -1,14 +1,16 @@
 {
-  "name": "trinkwasser-heilbronn",
+  "name": "watertransparency",
   "version": "1.0.0",
-  "description": "This is a the API for Trinkwasser/Drinking water.  Information about the project can be found on [Github](https://github.com/codeforeurope/trinkwasser) ",
+  "description": "This is the API for Water Transparency.  Information about the project can be found on [Github](https://github.com/codeforeurope/trinkwasser) ",
   "dependencies": {
     "connect": "^3.2.0",
+    "grunt-angular-gettext": "^2.3.3",
+    "grunt-static-i18n": "^0.3.3",
     "js-yaml": "^3.3.0",
+    "lodash": "^4.13.1",
     "mongoose": "^4.9.0",
     "serve-static": "^1.12.1",
-    "swagger-tools": "0.10.1", 
-    "lodash": "^4.13.1"
+    "swagger-tools": "0.10.1"
   },
   "devDependencies": {
     "standard": "^9.0.1",
@@ -35,8 +37,8 @@
     "karma": "^1.1.1"
   },
   "scripts": {
-    "start": "grunt && node index.js", 
-     "deploy": "grunt deploy"
+    "start": "grunt && node index.js",
+    "deploy": "grunt deploy"
   },
   "engines": {
     "node": ">=0.8.0"

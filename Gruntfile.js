@@ -1,20 +1,19 @@
-<<<<<<< HEAD
 module.exports = function (grunt) {
   'use strict'
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-	'compile-handlebars': {
-			allStatic: {
-				files: [{
+    'compile-handlebars': {
+      allStatic: {
+        files: [{
           src: 'templates/index.handlebars',
           dest: 'src/index.html'
-				}],
-				templateData: 'src/data/configuration.json',
+        }],
+        templateData: 'src/data/configuration.json',
         helpers: 'handlebar/helpers/*.js',
-        globals: [ 'data/translations/en/for_use_drinking-water_messages_en.json'],
+        globals: ['data/translations/en/for_use_drinking-water_messages_en.json'],
         partials: ['templates/partials/**/*.handlebars']
-			}
-		},    
+      }
+    },
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
@@ -45,16 +44,24 @@ module.exports = function (grunt) {
         }]
       }
     },
+    replace: {
+      cssConcat: {
+        src: ['<%=pkg.public%>generate-resources/*.css'],
+        dest: '<%=pkg.public%>generate-resources/',
+        replacements: [{ from: '};', to: '}' }]
+      }
+    },
+
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint'],
       template: {
-        files: ['templates/**/*.handlebars','src/data/configuration.json'],
+        files: ['templates/**/*.handlebars', 'src/data/configuration.json'],
         tasks: ['template']
       }
     },
     useminPrepare: {
-      html: ['client/**/index.html'],
+      html: ['src/*.html'],
       options: {
         dest: 'client/'
       }
@@ -74,7 +81,7 @@ module.exports = function (grunt) {
           cwd: 'src/',
           dest: 'client/',
           src: ['*.{ico,txt,html}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.{geojson,json}', 'fonts/*', 'css/*', 'js/*', 'lib/*']
-       }]
+        }]
       },
       redirect: {
         files: [{
@@ -90,7 +97,7 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      //html: ['src/*.html'],
+      html: ['src/*.html'],
       dist: {
         files: [{
           dot: true,
@@ -123,11 +130,11 @@ module.exports = function (grunt) {
         }]
       }
     },
- 		devserver: {
-			options: {
-				port: 8091
-			}
-		},
+    devserver: {
+      options: {
+        port: 8091
+      }
+    },
     connect: {
       server: {
         options: {
@@ -135,21 +142,34 @@ module.exports = function (grunt) {
           base: 'src'
         }
       }
-    },   
+    },
+    concat: {
+//      js: {
+//        src: ['client/lib/jquery.js', 'client/lib/bootstrap.js', 'client/lib/d3.js', 'client/lib/colorbrewer.js', 'client/js/app.js', 'client/js/*.js'],
+//        dest: 'client/tw.min.js'
+        /* // breaks on lib concat
+          ,options: {
+          separator: grunt.util.linefeed + ";" + grunt.util.linefeed,
+          process: function (src, filepath) {
+            // output an extra semicolon when concatenating javascripts
+            if (/\.js$/.test(filepath)) {
+              return src + ';';
+            }
+
+            return src;
+          }
+        } */
+//      },
+//      css: {
+//        src: ['client/css/*.css'],
+//        dest: 'client/tw.min.css'
+//      }
+    },
     'gh-pages': {
       options: {
-        base: 'dist'
+        base: 'client'
       },
       src: ['**']
-    },
-    abideCreate: {
-      default: { // Target name.
-        options: {
-          template: 'lang/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
-          languages: ['en-US', 'en', 'fr', 'es', 'nl', 'de'],
-          localeDir: 'lang/locale'
-        }
-      }
     },
     abideExtract: {
       js: {
@@ -160,11 +180,36 @@ module.exports = function (grunt) {
         }
       },
       html: {
-        src: 'src/index.html',
+        src: 'templates/**/*.handlebars', // index.html
         dest: 'lang/templates/LC_MESSAGES/messages.pot',
         options: {
           keyword: '_',
-          language: 'swig'
+          language: 'handlebars' // swig
+        }
+      }
+    },
+    abideCreate: {
+      json: { // Target name.
+        options: {
+          template: 'lang/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
+          languages: ['en-US', 'en', 'fr', 'es', 'nl', 'de'],
+          localeDir: 'lang/locale'
+        }
+      }
+    },
+    abideMerge: {
+      json: { // Target name.
+        options: {
+          template: 'lang/locale/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
+          localeDir: 'lang/locale'
+        }
+      }
+    },
+    abideCompile: {
+      json: {
+        dest: 'data/translations/',
+        options: {
+          type: 'json'
         }
       }
     },
@@ -195,6 +240,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-concat')
+  // cssmin
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-jsonmin')
   grunt.loadNpmTasks('grunt-rev')
@@ -202,17 +248,17 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-gh-pages')
   grunt.loadNpmTasks('grunt-i18n-abide')
   grunt.loadNpmTasks('hernanex3-grunt-static-i18n')
-  grunt.loadNpmTasks('grunt-angular-gettext');
-	grunt.loadNpmTasks('grunt-static-i18n');
-  grunt.loadNpmTasks('grunt-compile-handlebars');
-	grunt.loadNpmTasks('grunt-devserver');
+  grunt.loadNpmTasks('grunt-angular-gettext')
+  grunt.loadNpmTasks('grunt-static-i18n')
+  grunt.loadNpmTasks('grunt-compile-handlebars')
+  grunt.loadNpmTasks('grunt-devserver')
+  grunt.registerTask('deploy', ['build', 'gh-pages'])
 
-	grunt.registerTask('build', ['clean:dist', 'i18n', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist', 'copy:redirect', 'rev', 'usemin']);
-  grunt.registerTask('template', ['clean:html', 'compile-handlebars']);
-  grunt.registerTask('serve', ['template', 'connect', 'watch']);
+  grunt.registerTask('i18n', ['statici18n'])
+  grunt.registerTask('build', ['clean:dist', 'template', 'i18n', 'useminPrepare', 'imagemin', 'copy:dist', 'copy:redirect', 'rev', 'usemin', 'concat']) // 'uglify'
+  grunt.registerTask('template', ['clean:html', 'abideCompile', 'compile-handlebars']) // ,
+  grunt.registerTask('serve', ['template', 'connect', 'watch'])
   grunt.registerTask('dataupdate', ['jsonmin:dist'])
 
-  grunt.registerTask('deploy', ['build', 'gh-pages'])
   grunt.registerTask('default', ['build'])
-  grunt.registerTask('i18n', ['statici18n'])
 }

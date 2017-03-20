@@ -1,4 +1,5 @@
-tw.data.locations = {
+(function (tw) {
+  tw.data.locations = {
   'DE': {
     'Mannheim': {
       'Altrip': {
@@ -1867,3 +1868,4 @@ tw.data.locations = {
     'Miramar': {}
   }
 }
+}) (tw)

@@ -1,8 +1,6 @@
- (function Water() {
-    'use strict'
-
-
+(function Water () {
+  'use strict'
+  module.exports = Water
 }
-) Water()
-module.exports = Water
 
+)()

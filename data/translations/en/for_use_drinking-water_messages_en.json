@@ -3,7 +3,7 @@
    "": {
       "project-id-version": "PACKAGE VERSION",
       "report-msgid-bugs-to": "",
-      "pot-creation-date": "2016-07-25 16:57+0000",
+      "pot-creation-date": "2016-08-01 09:31+0000",
       "po-revision-date": "YEAR-MO-DA HO:MI+ZONE",
       "last-translator": "Mila Frerichs <mila.frerichs@gmail.com>, 2016",
       "language-team": "English (https://www.transifex.com/civic-vision-os/teams/65390/en/)",
@@ -67,7 +67,7 @@
    ],
    "Woher kommt unser Trinkwasser?": [
       null,
-      ""
+      "Where does the drinking water come from?"
    ],
    "Zwei Drittel des Wasserbedarfs der Stadt Münster werden in den vier münsterschen Wasserwerken Geist, Hohe Ward, Kinderhaus und Hornheide aufbereitet. Das restliche Drittel beziehen wir über die Gelsenwasser AG aus dem Haltener Wasserwerk.": [
       null,
@@ -75,7 +75,7 @@
    ],
    "Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser? ": [
       null,
-      ""
+      "Why does my tap water not taste as well as bottled water?"
    ],
    "Kontakt": [
       null,
@@ -88,5 +88,9 @@
    "Impressum": [
       null,
       "Legal"
+   ],
+   "Information zu": [
+      null,
+      "Information for"
    ]
 }}

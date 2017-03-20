@@ -17,3 +17,8 @@ node_modules
 *.iml
 atlassian*
 dist
+.vscode/
+npm-debug.log
+tw.min.css
+tw.min.js
+

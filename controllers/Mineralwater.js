@@ -11,7 +11,7 @@ http://www.eupedia.com/europe/european_mineral_waters.shtml
   var Code = require('../models/Code.js').schema
   module.exports.get = function (req, res, next) {
     var params = req.swagger.params
-    var mg_l = new Uom.model({
+    var mgl = new Uom.model({
       value: 'mg/L',
       label: 'Milligram per liter, Mass concentration unit. Conversion to SI unit: 1 kg/m3 = 10^3 mg/L'
     })
@@ -91,20 +91,20 @@ http://www.eupedia.com/europe/european_mineral_waters.shtml
 	},
 
   */
-    var volvic = new product.model({
+    var volvicwater = new product.model({
       name: 'Volvic',
       observations: [
-        new observation.model({value: 11.6, uom: mg_l, eqr: natrium}),
-        new observation.model({value: 71, uom: mg_l, eqr: bicarbonate}),
-        new observation.model({value: 31.7, uom: mg_l, eqr: silica}),
-        new observation.model({value: 6.2, uom: mg_l, eqr: kalium}),
-        new observation.model({value: 11.5, uom: mg_l, eqr: calcium}),
-        new observation.model({value: 8, uom: mg_l, eqr: magnesium}),
-        new observation.model({value: null, uom: mg_l, eqr: fluorid}),
-        new observation.model({value: 13.5, uom: mg_l, eqr: chlorid}),
-        new observation.model({value: 8.1, uom: mg_l, eqr: sulfat}),
-        new observation.model({value: null, uom: mg_l, eqr: hydrogene}),
-        new observation.model({value: 6.9, uom: mg_l, eqr: nitrat}) // 6.3 Wikipedia
+        new observation.model({value: 11.6, uom: mgl, eqr: natrium}),
+        new observation.model({value: 71, uom: mgl, eqr: bicarbonate}),
+        new observation.model({value: 31.7, uom: mgl, eqr: silica}),
+        new observation.model({value: 6.2, uom: mgl, eqr: kalium}),
+        new observation.model({value: 11.5, uom: mgl, eqr: calcium}),
+        new observation.model({value: 8, uom: mgl, eqr: magnesium}),
+        new observation.model({value: null, uom: mgl, eqr: fluorid}),
+        new observation.model({value: 13.5, uom: mgl, eqr: chlorid}),
+        new observation.model({value: 8.1, uom: mgl, eqr: sulfat}),
+        new observation.model({value: null, uom: mgl, eqr: hydrogene}),
+        new observation.model({value: 6.9, uom: mgl, eqr: nitrat}) // 6.3 Wikipedia
       ],
       sources: ['http://books.google.de/books?id=lzEoGWyqMBwC&pg=PA198&lpg=PA198&dq=volvic+nitratgehalt&source=bl&ots=pJEE0i9HwK&sig=OI_PeSr_QGBCfpeVCu70N4ohy8g&hl=de&ei=4-yvSuHrJ8jK_gbV0p3ZDA&sa=X&oi=book_result&ct=result&resnum=6#v=onepage&q&f=false'],
       vendor: volvic
@@ -112,15 +112,15 @@ http://www.eupedia.com/europe/european_mineral_waters.shtml
     var vittel = new product.model({
       name: 'Vittel',
       observations: [
-        new observation.model({value: 7.7, uom: mg_l, eqr: natrium}),
-        new observation.model({value: 5.2, uom: mg_l, eqr: kalium}),
-        new observation.model({value: 94, uom: mg_l, eqr: calcium}),
-        new observation.model({value: 20, uom: mg_l, eqr: magnesium}),
-        new observation.model({value: 0.22, uom: mg_l, eqr: fluorid}),
-        new observation.model({value: 3.8, uom: mg_l, eqr: chlorid}),
-        new observation.model({value: 120, uom: mg_l, eqr: sulfat}),
-        new observation.model({value: 455, uom: mg_l, eqr: hydrogene}),
-        new observation.model({value: 120, uom: mg_l, eqr: nitrat})
+        new observation.model({value: 7.7, uom: mgl, eqr: natrium}),
+        new observation.model({value: 5.2, uom: mgl, eqr: kalium}),
+        new observation.model({value: 94, uom: mgl, eqr: calcium}),
+        new observation.model({value: 20, uom: mgl, eqr: magnesium}),
+        new observation.model({value: 0.22, uom: mgl, eqr: fluorid}),
+        new observation.model({value: 3.8, uom: mgl, eqr: chlorid}),
+        new observation.model({value: 120, uom: mgl, eqr: sulfat}),
+        new observation.model({value: 455, uom: mgl, eqr: hydrogene}),
+        new observation.model({value: 120, uom: mgl, eqr: nitrat})
       ],
       sources: ['http://books.google.de/books?id=lzEoGWyqMBwC&pg=PA198&lpg=PA198&dq=volvic+nitratgehalt&source=bl&ots=pJEE0i9HwK&sig=OI_PeSr_QGBCfpeVCu70N4ohy8g&hl=de&ei=4-yvSuHrJ8jK_gbV0p3ZDA&sa=X&oi=book_result&ct=result&resnum=6#v=onepage&q&f=false"]'],
       vendor: vittel
@@ -129,14 +129,14 @@ http://www.eupedia.com/europe/european_mineral_waters.shtml
     var heiligenquelleclassic = new product.model({
       name: 'HEILIGENQUELLE CLASSIC',
       observations: [
-        new observation.model({value: 10.7, uom: mg_l, eqr: natrium}),
-        new observation.model({value: 2.6, uom: mg_l, eqr: kalium}),
-        new observation.model({value: 118, uom: mg_l, eqr: calcium}),
-        new observation.model({value: 48, uom: mg_l, eqr: magnesium}),
-        new observation.model({value: 0.22, uom: mg_l, eqr: fluorid}),
-        new observation.model({value: 43, uom: mg_l, eqr: chlorid}),
-        new observation.model({value: 68, uom: mg_l, eqr: sulfat}),
-        new observation.model({value: 455, uom: mg_l, eqr: hydrogene})
+        new observation.model({value: 10.7, uom: mgl, eqr: natrium}),
+        new observation.model({value: 2.6, uom: mgl, eqr: kalium}),
+        new observation.model({value: 118, uom: mgl, eqr: calcium}),
+        new observation.model({value: 48, uom: mgl, eqr: magnesium}),
+        new observation.model({value: 0.22, uom: mgl, eqr: fluorid}),
+        new observation.model({value: 43, uom: mgl, eqr: chlorid}),
+        new observation.model({value: 68, uom: mgl, eqr: sulfat}),
+        new observation.model({value: 455, uom: mgl, eqr: hydrogene})
       ],
       sources: ['http://wueteria.de/unser-wasser/unsere-mineralwasserquellen/'],
       vendor: wueteria
@@ -144,21 +144,21 @@ http://www.eupedia.com/europe/european_mineral_waters.shtml
     var teussernaturell = new product.model({
       name: 'Teusser Naturell',
       observations: [
-        new observation.model({value: 53, uom: mg_l, eqr: natrium}),
-        new observation.model({value: 7, uom: mg_l, eqr: kalium}),
-        new observation.model({value: 537, uom: mg_l, eqr: calcium}),
-        new observation.model({value: 0.5, uom: mg_l, eqr: nitrat}),
-        new observation.model({value: 92, uom: mg_l, eqr: magnesium}),
-        new observation.model({value: 0.21, uom: mg_l, eqr: fluorid}),
-        new observation.model({value: 27, uom: mg_l, eqr: chlorid}),
-        new observation.model({value: 1467, uom: mg_l, eqr: sulfat}),
-        new observation.model({value: 357, uom: mg_l, eqr: hydrogene})
+        new observation.model({value: 53, uom: mgl, eqr: natrium}),
+        new observation.model({value: 7, uom: mgl, eqr: kalium}),
+        new observation.model({value: 537, uom: mgl, eqr: calcium}),
+        new observation.model({value: 0.5, uom: mgl, eqr: nitrat}),
+        new observation.model({value: 92, uom: mgl, eqr: magnesium}),
+        new observation.model({value: 0.21, uom: mgl, eqr: fluorid}),
+        new observation.model({value: 27, uom: mgl, eqr: chlorid}),
+        new observation.model({value: 1467, uom: mgl, eqr: sulfat}),
+        new observation.model({value: 357, uom: mgl, eqr: hydrogene})
       ],
       sources: ['http://www.teusser.de/index.php?id=225'],
       vendor: teusser
     })
 
-    var output = [heiligenquelleclassic.toObject(), teussernaturell.toObject(), vittel.toObject(), volvic.toObject()]
+    var output = [heiligenquelleclassic.toObject(), teussernaturell.toObject(), vittel.toObject(), volvicwater.toObject()]
     res.setHeader('content-type', 'application/json')
     res.setHeader('charset', 'utf-8')
     res.end(JSON.stringify(output, null, 2))
